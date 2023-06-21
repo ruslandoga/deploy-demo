@@ -31,7 +31,6 @@ RUN mix do compile
 
 # Compile the release
 COPY config/runtime.exs config/
-COPY rel rel
 RUN mix release
 
 FROM alpine:3.18.2
