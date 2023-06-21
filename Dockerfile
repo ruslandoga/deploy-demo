@@ -25,7 +25,6 @@ COPY config/config.exs config/${MIX_ENV}.exs config/
 RUN mix deps.compile
 
 # compile project
-COPY priv priv
 COPY lib lib
 RUN mix do compile
 
