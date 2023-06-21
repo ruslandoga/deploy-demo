@@ -44,4 +44,4 @@ COPY --from=builder /app/_build/${MIX_ENV}/rel/d ./
 RUN adduser -H -S -u 999 -G nogroup -g '' d
 USER 999
 
-CMD D_SERVER=1 /app/bin/start
+CMD D_SERVER=1 /app/bin/d start
