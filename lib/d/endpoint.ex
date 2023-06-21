@@ -10,4 +10,8 @@ defmodule D.Endpoint do
     message = D.config!(:message)
     send_resp(conn, 200, message)
   end
+
+  match _ do
+    send_resp(conn, 404, "not found")
+  end
 end
